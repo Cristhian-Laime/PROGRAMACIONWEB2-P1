@@ -97,7 +97,7 @@ section > div{
     height: 100%;
 }
 footer {
-    height: 38em;
+    height: 30em;
     background-color: rgb(245, 245, 247);
     padding: 2%;
     padding-left: 20%;
@@ -172,4 +172,192 @@ nav ul li:hover{
 }
 .grid-footer li:hover{
     text-decoration: underline;
+}
+
+/* carrusel */
+.carrusel{
+    width: 95%;
+    max-width: 100%;
+    height: 500px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+}
+.track{
+    display: flex;
+    transition: transform 1s ease;
+}
+.slide {
+    min-width: 100%;
+    height: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold
+}
+.btn{
+    position: absolute;
+    max-width: 240px;
+    max-height: 510px;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+}
+.antes{
+    left: 0px;
+}
+.siguiente{
+    right: 0px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* soporte pagina */
+#contacto{
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+}
+#contacto .container{
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+#contacto h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#contacto p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #d4c8c8;
+}
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+form button:hover{
+    transition: 0.5s;
+    background-color: #555;
+}
+.soporte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+    margin-top: 4em;
+}
+.soporte >h2{
+    font-size: 64px;
+    font-weight: bold;
+}
+.soporte > p{
+    font-size: 24px;
+    margin-top: 34px;
+}
+.fichas-soporte{
+    background-color: #fafafc;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    padding: 5em;
+}
+.fichas-soporte section{
+    border-radius: 20px;
+    background-color: white;
+}
+.articulo{
+    flex-direction: row;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    padding: 5em;
+    background-color: white;
+    border-radius: 20px;
+}
+.articulo  h3 {
+    color: #06c;
+}
+.compra{
+    display: flex;
+    flex-direction: column;
+    padding: 5em 10em;
+}
+.titulo-compra{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo-compra h2{
+    font-weight: 610;
+    font-size: 4em;
+}
+.titulo-compra p{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.p-compra{
+    width: 400px;
+}
+.elegir-compra{
+    background-color: rgb(245, 245, 247);
+    border-radius: 20px;
+    margin-top: 2.5em;
+}
+.elegir-compra > ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.elegir-compra ul li{
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+.elegir-compra ul li:hover{
+    transform: scale(1.1);
+}
+.seccion-disribuidor{
+    background-color: white;
+    padding: 5em;
+}
+.seccion-disribuidor h3 {
+    font-size: 3em;
+    font-weight: bold;
+}
+.ficha-compra{
+    background-color: rgb(245, 245, 247);
+}
+.seccion-disribuidor p {
+    font-size: 1.5em;
+    
+    margin-bottom: 10px;
+}
+.seccion-disribuidor > button{
+    font-size: 1.2em;
 }

@@ -13,15 +13,15 @@
         <nav>
             <ul>
                 <li><img src="img/apple-logo.png" width="20px" alt=""></li>
-                <li>Mac</li>
-                <li>iPad</li>
-                <li>iPhone</li>
-                <li>Watch</li>
-                <li>AirPods</li>
-                <li>TV y Casa</li>
-                <li>Entretenimiento</li>
-                <li>Soporte</li>
-                <li>Dónde comprar</li>
+                <li><a href="#mac">Mac</a></li>
+                <li><a href="#ipad">iPad</a></li>
+                <li><a href="#iphone">iPhone</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#airpods">AirPods</a></li>
+                <li><a href="#tv">TV y Casa</a></li>
+                <li><a href="#tv">Entretenimiento</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="comprar.html">Dónde comprar</a></li>
                 <li><img src="img/buscar.png" style="border-color: white;" width="20px" alt=""></li>
             </ul>
         </nav>
@@ -29,7 +29,7 @@
     <main>
         <!-- primera seccion -->
         <section>
-            <div class="seccion">
+            <div class="seccion" id="iphone">
                 <img src="img/foto1.png" alt="">
                 <div class="contenido">
                     <h2>iPhone</h2>
@@ -42,7 +42,7 @@
                     </button>
                 </div>
             </div>
-            <div class="seccion">
+            <div class="seccion" id="ipad">
                 <img src="img/ipadair.png" alt="">
                 <div class="contenido">
                     <h2>iPad air</h2>
@@ -55,7 +55,7 @@
                     </button>
                 </div>
             </div>
-            <div class="seccion">
+            <div class="seccion" id="airpods">
                 <img src="img/foto3.jpg" alt="">
                 <div class="contenido">
                     <h2>Air Pods Pro 3</h2>
@@ -71,7 +71,7 @@
         </section>
         <!-- seccion grid -->
         <section class="contenedor-grid">
-            <div class="seccion-grid">
+            <div class="seccion-grid" id="watch">
                 <img src="img/grid1.jpg" alt="">
                 <div class="grid">
         
@@ -85,7 +85,7 @@
                     </button>
                 </div>
             </div>
-            <div class="seccion-grid">
+            <div class="seccion-grid" id="mac">
                 <img src="img/grid2.png" alt="">
                 <div class="grid">
          
@@ -157,7 +157,28 @@
                 </div>
             </div>
         </section>
-        
+        <!-- carrusel -->
+        <section class="carrusel" id="tv">
+            <div class="track">
+                <article class="slide">
+                    <img src="img/peli1.jpg" alt="">
+                </article>
+                <article class="slide">
+                    <img src="img/peli2.jpg" alt="">
+                </article>
+                <article class="slide">
+                    <img src="img/peli3.jpg" alt="">
+                </article>
+                <article class="slide">
+                    <img src="img/peli4.jpg" alt="">
+                </article>
+                <article class="slide">
+                    <img src="img/peliii5.jpg" alt="">
+                </article>
+            </div>
+            <button class="btn antes"></button>
+            <button class="btn siguiente"></button>
+        </section>
     </main>
     <footer>
         <p>1. Pruebas realizadas por Apple en julio de 2025 usando unidades AirPods Pro 3 enlazadas con unidades iPhone 16 con versiones preliminares de firmware de los AirPods y iOS 26. La prueba de reducción de ruido se realizó según la norma IEC 60268-24. La comparación se realizó con los audífonos internos inalámbricos más vendidos disponibles en el mercado al momento de la prueba. El rendimiento depende de la configuración del dispositivo, el entorno y muchos otros factores.
@@ -204,5 +225,7 @@ El Apple Watch Ultra no está disponible en Costa Rica.
         <br>
         <p>Copyright © 2026 Apple Inc. Todos los derechos reservados.</p>
     </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
